@@ -4,7 +4,6 @@ public class BankAccount {
 
     private int number;
     private double cash;
-    private double withdrawCash;
 
     public BankAccount(int number) {
         cash = 0;
@@ -31,21 +30,22 @@ public class BankAccount {
 
     double withdrawCash(double amount) {
         if (amount < 0.0) {
+            amount = 0.0;
             System.out.println("Podana kwota nie może być mniejsza od zera!");
         } else {
             if (this.cash > amount) {
                 this.cash -= amount;
-                this.withdrawCash = amount;
             } else {
-                this.withdrawCash = this.cash;
+                amount = this.cash;
                 this.cash = 0;
             }
         }
         System.out.println("Zostało wypłacone: ");
-        return this.withdrawCash;
+        return amount;
     }
-    String printInfo(){
-        return "Nr konta to:" + this.number + " .Aktualny stan konta: " + this.cash;
+
+    String printInfo() {
+        return "Nr konta to:" + this.number + ". Aktualny stan konta: " + this.cash;
     }
 
 }
