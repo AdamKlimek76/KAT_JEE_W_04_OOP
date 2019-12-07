@@ -16,6 +16,7 @@ public class Main {
         System.out.println(bankAccount1.printInfo());
         System.out.println(bankAccount1.withdrawCash(100.00));
         System.out.println(bankAccount1.withdrawCash(500.00));
+        System.out.println(bankAccount1.withdrawCash(-100.00));
         System.out.println(bankAccount1.printInfo());
 
     }

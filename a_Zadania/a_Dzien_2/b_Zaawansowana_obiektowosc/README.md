@@ -38,7 +38,7 @@ Stwórz klasę `Product`. Klasa ma posiadać poniższe atrybuty:
 #### Generowanie kolejnego id dla produktu:  
 
 W dalszej części programu będziemy chcieli identyfikować nasze produkty po ich **id**, dlatego musimy zagwarantować, że każdy z utworzonych produktów będzie miał unikalny numer identyfikacyjny.
-W tym celu powinniśmy zdefiniować zmienną klasową ```nextId```.
+W tym celu powinniśmy zdefiniować 		zmienną klasową ```nextId```.
 
 Zmienna ta będzie trzymała **id**, które zostanie nadane kolejnemu utworzonemu produktowi. Następnie w konstruktorze klasy musimy wykonać poniższe czynności:
   * każdemu tworzonemu produktowi przypisać **id** trzymane w zmiennej `nextId`,
