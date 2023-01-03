@@ -22,7 +22,7 @@ public class User extends Person {
         return books;
     }
 
-    public int booksTabLenght() {
+    public int booksTabLength() {
         return books.length;
     }
 
